@@ -15,8 +15,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     color: var(--text-color);
 }
 
@@ -35,34 +34,29 @@ header {
 
 }
 
+/* ToDo accordeon joli avec CSS et JS
+https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
+*/
+
 nav {
     order: 1;
 
     position: fixed;
     top: 0;
-    /*
-    position: sticky;
-    */
-
-    /*
-    flex-basis: 190px;
-    */
     width: 12em;
     border: solid 1px gray;
-    border-radius: 6px;
     height: 100%;
     overflow: scroll;
-    padding: 10px;
-    box-shadow: 5px 5px 5px gray;
+    padding: 1em;
+    box-shadow: 5px 0px 5px gray;
 }
 
-nav p {
-    padding-left: 20px;
-    margin: 10px 0;
+details {
+    padding: 0.5em 0;
 }
 
-nav h3:first-of-type {
-    margin-top: 5px;
+details p{
+    padding: 0.5em 0.5em 0.5em 2em;
 }
 
 main {
@@ -72,7 +66,7 @@ main {
     width: calc(100vw - 14em);
     margin-left: 14em;
 
-            /* 14em = 12+2em ? En tout cas c'est comme ça que ça marche*/
+            /* 14em = 12+2*1em de padding */
     width: calc(100vw - 14em);
 
     margin-left: 14em;
@@ -91,11 +85,6 @@ main {
 
 .soluce-complete h2:first-of-type {
     margin-top: 20px;
-}
-
-.soluce-complete h3 {
-    text-align: center;
-    margin-top: 40px;
 }
 
 .resume {
