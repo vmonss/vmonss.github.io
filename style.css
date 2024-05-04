@@ -3,69 +3,88 @@
 }
 
 :root {
-    --text-color: #ff8c42;
+    --texth-color: #ff8c42;
+    --backmain-color: ghostwhite;
+    --backnav-color: azure;
+    --hover-color: lightgray;
 }
 
 body {
-    background-color: lightblue;
+    background-color: var(--backmain-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    color: var(--text-color);
+    color: var(--texth-color);
 }
-
-/* Début soluce complete*/
-
-header {
-    border: dotted 1px black;
-    text-align: center;
-
-    /* nav : 12em + 2*1em de padding */
-    margin-left: 14em;
-    padding: 1em 2em;
-}
-
-/* ToDo accordeon joli avec CSS et JS
-https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
-*/
 
 nav {
+    background-color: var(--backnav-color);
     position: fixed;
     top: 0;
     width: 12em;
     border: solid 1px gray;
     height: 100%;
 
-    /* Pas joli : affiche l'ascenseur
-    même si ce n'est pas nécessaire
-    overflow: scroll; */
+    overflow-y: auto;
 
     padding: 1em;
     box-shadow: 5px 0px 5px gray;
 }
 
+summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+summary:hover {
+    background-color: var(--hover-color);
+}
+
+summary::before {
+    content: "+";
+    position: absolute;
+    right: 10px;
+
+    /*
+    transform: translateY(5%);
+    */
+
+}
+
+/*
+summary:nth-of-type(6)::before {
+    transform: translateY(20%);
+}
+*/
+
 details {
     padding: 0.5em 0;
 }
 
-details p{
+details p {
     padding: 0.5em 0.5em 0.5em 2em;
 }
 
-main {
+/* nav : 12em + 2*1em de padding */
+header, main, footer {
     margin-left: 14em;
-
-    /*
-    // 14em = 12+2*1em de padding
-    width: calc(100vw - 14em);
-    */
-
-    margin-left: 14em;
-
 }
+
+/* ToDo accordeon joli avec CSS et JS
+https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
+*/
+
+header {
+    border: dotted 1px black;
+    text-align: center;
+
+    padding: 1em 2em;
+}
+
+/* Début soluce complete*/
 
 .soluce-complete {
     border: dashed 1px black;
@@ -83,8 +102,4 @@ main {
 
 .resume {
     text-align: center;
-}
-
-footer {
-
 }
