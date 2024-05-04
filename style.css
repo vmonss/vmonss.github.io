@@ -9,29 +9,23 @@
 body {
     background-color: lightblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     color: var(--text-color);
 }
 
 /* Début soluce complete*/
 
 header {
-    order: 2;
-
     border: dotted 1px black;
     text-align: center;
 
-            /* 14em = 12+2em ? En tout cas c'est comme ça que ça marche*/
-    width: calc(100vw - 14em);
-
+    /* nav : 12em + 2*1em de padding */
     margin-left: 14em;
-
+    padding: 1em 2em;
 }
 
 /* ToDo accordeon joli avec CSS et JS
@@ -39,14 +33,16 @@ https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-jav
 */
 
 nav {
-    order: 1;
-
     position: fixed;
     top: 0;
     width: 12em;
     border: solid 1px gray;
     height: 100%;
-    overflow: scroll;
+
+    /* Pas joli : affiche l'ascenseur
+    même si ce n'est pas nécessaire
+    overflow: scroll; */
+
     padding: 1em;
     box-shadow: 5px 0px 5px gray;
 }
@@ -60,14 +56,12 @@ details p{
 }
 
 main {
-    order: 3;
-
-    display: flex;
-    width: calc(100vw - 14em);
     margin-left: 14em;
 
-            /* 14em = 12+2*1em de padding */
+    /*
+    // 14em = 12+2*1em de padding
     width: calc(100vw - 14em);
+    */
 
     margin-left: 14em;
 
@@ -92,8 +86,5 @@ main {
 }
 
 footer {
-    order:4;
-    
-    width: calc(100vw - 14em);
-    margin-left: 14em;
+
 }
