@@ -3,25 +3,25 @@
 }
 
 :root {
-    --texth-color: #ff8c42;
-    --backmain-color: ghostwhite;
-    --backnav-color: azure;
-    --hover-color: lightgray;
+    --header-text-color: #ff8c42;
+    --main-background-color: ghostwhite;
+    --navbar-background-color: azure;
+    --navbar-hover-color: lightgray;
 }
 
 body {
-    background-color: var(--backmain-color);
+    background-color: var(--main-background-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    color: var(--texth-color);
+    color: var(--header-text-color);
 }
 
 nav {
-    background-color: var(--backnav-color);
+    background-color: var(--navbar-background-color);
     position: fixed;
     top: 0;
     width: 12em;
@@ -34,21 +34,23 @@ nav {
     box-shadow: 5px 0px 5px gray;
 }
 
+/* Changement du style du curseur de la souris et du caractère pour le "summary" */
 summary {
     cursor: pointer;
     list-style: none;
 }
 
 summary:hover {
-    background-color: var(--hover-color);
+    background-color: var(--navbar-hover-color);
 }
 
+/*Ajout de caractère "+" pour la liste*/
 summary::before {
     content: "+";
     position: absolute;
     right: 10px;
 
-    /*
+    /* Déplacement vertical du caractère "+"
     transform: translateY(5%);
     */
 
@@ -81,23 +83,42 @@ header {
     border: dotted 1px black;
     text-align: center;
 
-    padding: 1em 2em;
+    padding: 1em 3em;
 }
 
 /* Début soluce complete*/
 
 .soluce-complete {
     border: dashed 1px black;
-    padding: 20px;
+    padding: 0em 2em 2em 2em;
 }
 
 .soluce-complete h2 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2em;
 }
 
-.soluce-complete h2:first-of-type {
-    margin-top: 20px;
+.soluce-complete h3 {
+    padding-left: 2em;
+    margin-top: 2em;
+}
+
+.soluce-complete p {
+    margin: 1em;
+}
+
+.bloc-niveau {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloc-images {
+    border: dashed 1px red;
+    text-align: center;
+/*Fixé par l'image la plus large = 581px*/
+    width: 600px;
 }
 
 .resume {
