@@ -1,1 +1,1 @@
-/* details.addEventListener("toggle", ) *//
+/* details.addEventListener("toggle", ) */
