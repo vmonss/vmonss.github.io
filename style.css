@@ -107,23 +107,41 @@ header {
     margin: 1em;
 }
 
-.bloc-niveau {
+.niveau {
     display: flex;
     flex-flow: row wrap;
+    /*To Do : No-wrap et passer en wrap avec les media qweries*/
     justify-content: space-between;
     align-items: center;
 }
 
-.bloc-images {
+.illustrations {
     border: dashed 1px red;
     text-align: center;
-/*Fixé par l'image la plus large = 581px*/
-    width: 600px;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 41em;
+    /*Image la plus large = 581px*/
+
 }
 
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.legende {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Impacte les blocs dans "legende p" => le texte ? et les <img> */ 
 .legende p {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
