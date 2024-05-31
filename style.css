@@ -109,8 +109,8 @@ header {
 
 .niveau {
     display: flex;
-    flex-flow: row wrap;
-    /*To Do : No-wrap et passer en wrap avec les media qweries*/
+    flex-flow: row nowrap;
+    /*To Do : passer en wrap avec media qweries*/
     justify-content: space-between;
     align-items: center;
 }
