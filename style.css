@@ -121,6 +121,16 @@ header {
     width: 600px;
 }
 
+.legende p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legende img {
+    margin: 0 0.5em;
+}
+
 .resume {
     text-align: center;
 }
