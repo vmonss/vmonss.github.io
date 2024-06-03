@@ -9,6 +9,10 @@
     --navbar-hover-color: lightgray;
 }
 
+header p{
+    margin-top: 1em;
+}
+
 body {
     background-color: var(--main-background-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
