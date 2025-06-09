@@ -1,4 +1,15 @@
-h1 {
+body {
+    background-color: #e5f9e9;
+}
+
+.art-intro, figcaption {
     text-align: center;
+}
+
+h1 {
     color: blue;
+}
+
+img {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
