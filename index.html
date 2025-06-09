@@ -18,17 +18,48 @@
 </head>
 
 <body>
-    <main class="container-lg">
-        <article class="art-intro">
-            <h1 class="my-5">Bonjour et bienvenue sur mon portfolio !</h1>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mon profil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#parcours">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projets">Mes projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
 
+                    <ul class="navbar-nav ms-auto mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://gitlab.com/users/vmonss/projects">Dépôts Gitlab</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside id="intro" class="py-5">
+        <article class="container">
+            <h1>Bonjour et bienvenue !</h1>
+            
             <h2 class="my-5 fs-4">
                 <p>Je m'appelle <strong>Vincent</strong>, je suis un jeune <strong>développeur web</strong></p>
                 <p><b>Enthousiaste</b> et <b>investi</b>, je recherche une équipe pour m'accueillir pendant mon <strong>alternance</strong> et avec qui poursuivre mon aventure professionnelle</p>
             </h2>
-
+            
             <figure>
-                <img class="d-block mx-auto img-fluid rounded-circle" src="assets/portrait.jpg" alt="" aria-hidden="true">
+                <img class="d-block mx-auto mb-1 img-fluid rounded-circle" src="assets/portrait.jpg" alt="" aria-hidden="true">
                 <figcaption class="fs-5">
                     <i class="bi bi-rocket-takeoff fs-4 mx-1" aria-hidden="true"></i>
                     En recherche d'alternance
@@ -36,38 +67,36 @@
                 </figcaption>
             </figure>
         </article>
-
-        <hr class="my-5">
-
-        <article id="art-presentation">
-
-            <h3 class="ms-4 my-4">Présentation</h3>
-
-            <p>Après des études de biotechnologies et une dizaine d'années à faire des prélèvements principalement en environnement industriel, je me reconvertir dans le secteur du développement informatique, car j'ai une appétence pour le code depuis que je suis étudiant.</p>
-            
-            <article id="art-formations">
-                <h4 class="ms-4 my-3">Formations</h4>
+    </aside>
+    
+    <main>
+        <section id="contenu-main" class="container py-1">
+            <section id="presentation">
+                <h3 class="ms-4 my-4 fs-2">Présentation</h3>
+                
+                <p>Après des études de biotechnologies et une dizaine d'années à faire des prélèvements principalement en environnement industriel, je me reconvertir dans le secteur du développement informatique, car j'ai une appétence pour le code depuis que je suis étudiant.</p>
+                
+                <article id="formations">
+                    <h4 class="ms-4 my-3 fs-3">Formations</h4>
                     <ul>
                         <li>2025 - Titre professionnel <strong>Développeur Web et Web Mobile</strong> (niveau bac +2, <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank">RNCP 37674</a>), à l'<b>ENI</b></li>
                         <li>2013 - Master en Génie biotechnologique (GBMAI)</li>
                         <li>2010 - BTS Bio-Analyses & Contrôles</li>
                         <li>2008 - Bac STL option BGB</li>
                     </ul>
-            </article>
-
-            <figure>
-                <img
-                class="d-block mx-auto img-fluid rounded"
-                src="assets/Lac du grand Laus2.jpg"
-                alt="Photo prise depuis le col du Malrif, situé sur la route du GR58 nommé 'Le Tour du Queyras' (dans les Alpes). La photo est prise en plongée, il y a le lac du grand Laus en contrebas."
-                />                
-                <figcaption>Photo du Lac du grand Laus, prise depuis le col du Malrif, le soleil était un peu timide</figcaption>
-            </figure>
-        </article>
-
-        <article id="art-contact">
-
-        </article>
+                </article>
+                
+                <figure>
+                    <img class="d-block mx-auto img-fluid rounded" src="assets/Lac du grand Laus2.jpg"
+                    alt="Photo prise depuis le col du Malrif, situé sur la route du GR58 nommé 'Le Tour du Queyras' (dans les Alpes). La photo est prise en plongée, il y a le lac du grand Laus en contrebas." />
+                    <figcaption>Photo du Lac du grand Laus, prise depuis le col du Malrif, le soleil était un peu timide ce jour là</figcaption>
+                </figure>
+            </section>
+            
+            <section id="contact">
+                
+            </section>
+        </section>
     </main>
 
 </body>
