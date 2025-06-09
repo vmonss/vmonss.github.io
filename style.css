@@ -10,6 +10,10 @@ h1 {
     color: blue;
 }
 
+.bi-rocket-takeoff{
+    color: #E08D2B;
+}
+
 img {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
