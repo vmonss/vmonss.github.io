@@ -14,18 +14,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Bienvenue sur mon portfolio - Vincent MONSSIEUR</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm sticky-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-md sticky-top bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">Mon profil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,10 +40,11 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-
+    
                 <ul class="navbar-nav ms-auto mb-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://gitlab.com/users/vmonss/projects">Dépôts Gitlab</a>
+                        <a class="nav-link" target="_blank" href="https://gitlab.com/users/vmonss/projects">Dépôts Gitlab <i
+                                class="bi bi-box-arrow-up-right"></i></a>
                     </li>
                 </ul>
             </div>
@@ -55,9 +56,9 @@
             <h1>Bonjour et bienvenue !</h1>
 
             <h2 class="my-5 fs-4">
-                <p>Je suis <strong>Vincent</strong>, un jeune <strong>développeur web</strong></p>
+                <p>Je suis <strong>Vincent</strong>, un jeune <strong>développeur web</strong> rennais</p>
                 <p><b>Enthousiaste</b> et <b>investi</b>, je recherche une équipe pour m'accueillir pendant mon
-                    <strong>alternance</strong> et avec qui poursuivre mon aventure professionnelle</p>
+                    <strong>alternance</strong> d'1 an et avec qui poursuivre mon aventure professionnelle</p>
             </h2>
 
             <figure>
@@ -73,7 +74,7 @@
     <main>
         <section id="contenu-main" class="container py-1">
             <section id="presentation">
-                <h3 class="ms-3 my-4 fs-2">Présentation</h3>
+                <a href="#presentation"><h3 class="ms-3 mt-5 mb-4 fs-2">Présentation</h3></a>
 
                 <p>Après des études de biotechnologies et une dizaine d'années à faire des prélèvements principalement
                     en environnement industriel, je me reconverti dans le secteur du développement informatique, car
@@ -94,7 +95,7 @@
                 <article id="centres-d-interets">
                     <h4 class="ms-4 mt-5 fs-3">Centres d'intérêts</h4>
 
-                    <h3 class="ms-5 mt-4 mb-3 fs-4">Retrogaming</h3>
+                    <h5 class="ms-5 mt-4 mb-3 fs-4">Retrogaming</h5>
                     <p>Ce que je trouve intéressant dans le retrogaming c'est qu'avec la pratique du speedrun, le
                         fonctionnement des jeux et
                         les astuces utilisées par les développeurs sont de mieux en mieux connu⋅es. Il devient donc
@@ -102,13 +103,13 @@
                         approximations à son avantage pour aller vite et/ou faire des actions totalement imprévues à
                         l'origine.</p>
 
-                    <h3 class="ms-5 mt-4 mb-3 fs-4">Randonnée en itinérance</h3>
+                    <h5 class="ms-5 mt-4 mb-3 fs-4">Randonnée en itinérance</h5>
                     <p>J'adore aussi les randonnées en montagne, c'est l'occasion de faire du sport, voir de beaux
                         panoramas, de changer des
                         habitudes. J'espère pourvoir faire le tour du Beaufortain l'année prochaine. 😊</p>
 
                     <figure>
-                        <img class="d-block mx-auto img-fluid rounded" src="assets/Lac du grand Laus2.jpg"
+                        <img class="d-block mx-auto img-fluid rounded" src="assets/Lac du grand Laus2.jpg" loading="lazy"
                             alt="Photo prise depuis le col du Malrif, situé sur la route du GR58 nommé 'Le Tour du Queyras' (dans les Alpes). La photo est prise en plongée, il y a le lac du grand Laus en contrebas." />
                         <figcaption>Photo du Lac du grand Laus, prise depuis le col du Malrif, le soleil était un peu
                             timide ce jour là</figcaption>
@@ -117,16 +118,102 @@
             </section>
 
             <section id="projets">
-                <h3 class="ms-3 my-4 fs-2">Mes projets</h3>
+                <a href="#projets"><h3 class="ms-3 mt-5 mb-4 fs-2">Mes projets</h3></a>
+                <p>Voici les différents projets sur lesquels j'ai travaillé par ordre antéchronologique :</p>
 
-            </section>
+                <article>
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">API de Quiz en SpringBoot (Java)</h4>
+                    <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
+                        <div class="projet-img-div">
+                            <a target="_blank" href="https://gitlab.com/vmonss/quiz">
+                                <img class="img-fluid rounded" src="assets/API quiz.webp" loading="lazy"
+                                    alt="Lien vers le dépôt Gitlab de mon API Quiz">
+                            </a>
+                        </div>
+                        <div class="projet-texte-div">
+                            <p>Une API qui fournit des questions, recueille des réponses, vérifie si les réponses
+                                fournies correspondent aux réponses attendues et retourne un score.</p>
+                            <p>C'est un projet pour retravailler les inversions de dépendance, les validations et l'utilisation de
+                                l'ORM Hibernate.</p>
+                            <p>J'ai volontairement tout délégué au back alors que ce n'est pas forcément le plus pertinent, mais ça
+                                permet de créer et soumettre un quiz depuis un "IDE" de test d'API (ex : Bruno, Insomnia...).</p>
+                        </div>
+                    </div>
+                </article>
 
-            <section id="contact">
-                <h3 class="ms-3 my-4 fs-2">Me contacter</h3>
+                <article>
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">Projet de stage de fin de D2WM : Skilltest (API en Symfony / front-end en Angular)</h4>
+                        <p>Il s'agit une preuve de concept (POC) pour une application d'incitation à la pratique sportive.</p>
+                        <p>L'application est responsive et permet de sélectionner un exercice parmi une liste proposée, d'enregistrer une
+                            vidéo et de l'envoyer à l'API en Symfony.</p>
+                        <p>Vous trouverez sur mon dépôt Gitlab le code du
+                            <a target="_blank" href="https://gitlab.com/vmonss/front_skillstest">front-end</a>
+                            et le code du <a target="_blank" href="https://gitlab.com/vmonss/back_skillstest">back end</a>.
+                        </p>
+
+                        <!-- TODO: Améliorer le visuel ici -->
+                        <details class="rounded">
+                            <summary class="p-2">
+                                <p>Vous pouvez aussi cliquer ici pour consulter les démos vidéos que j'ai enregistrées :</p>
+                            </summary>
+                            <video id="demo-enregistrement" class="d-block mx-auto mt-4" controls preload="none">
+                                <source src="assets/Démo enregistrement sur smartphone.m4v" type="video/mp4" />
+                            </video>
+                            <p class="text-center mt-2 mb-4">Démonstration d'un enregistrement</p>
+                            <video id="demo-consultation" class="d-block mt-4 w-100" controls preload="none">
+                                <source src="assets/Démo consultation enregistrement sur desktop.m4v" type="video/mp4" />
+                            </video>
+                            <p class="text-center mt-2 mb-3">Démonstration d'une consultation</p>
+                        </details>
+                </article>
+
+                <article>
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de gestion de sorties entre étudiant⋅es (projet de groupe ENI) en Symfony (PHP)</h4>
+                    <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
+                        <div class="projet-img-div">
+                            <a target="_blank" href="https://gitlab.com/vmonss/sorties-eni">
+                                <img class="img-fluid rounded" src="assets/sorties-eni.jpg" loading="lazy"
+                                    alt="Lien vers le dépôt Gitlab du projet 'Sorties ENI'">
+                            </a>
+                        </div>
+                        <div class="projet-texte-div">
+                            <p></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pb-5">
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de vente d'objet d'occasion aux enchères (projet de groupe ENI) en SpringBoot (Java)</h4>
+                    <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
+                        <div class="projet-img-div">
+                            <a target="_blank" href="https://gitlab.com/vmonss/encheres-eni">
+                                <img class="img-fluid rounded" src="assets/encheres-eni.jpg" loading="lazy"
+                                    alt="Lien vers le dépôt Gitlab du projet 'Enchères ENI'">
+                            </a>
+                        </div>
+                        <div class="projet-texte-div">
+                            <p></p>
+                        </div>
+                    </div>
+                </article>
 
             </section>
         </section>
     </main>
+
+    <section id="contact" class="pb-5">
+        <article class="container">
+            <a href="#contact"><h3 class="ps-3 py-4 fs-2">Me contacter</h3></a>
+            <p>Intéressé⋅e par ce que vous avez vu ? Je serai heureux d'échanger avec vous !<br>
+                Voici quelques moyens pour me contacter :</p>
+            
+            <footer class="d-flex flex-column flex-md-row justify-content-md-around mt-4">
+                <p>Mon mail : <a href="mailto:vincent.monssieur@hotmail.fr">vincent.monssieur@hotmail.fr</a></p>
+                <p>Mon Linkedin : <a href="https://linkedin.com/in/vincent-monssieur/">/in/vincent-monssieur/</a></p>
+                <p>Mes dépôts Gitlab : <a href="https://gitlab.com/users/vmonss/projects">vmonss</a> <i class="bi bi-box-arrow-up-right"></i></p>
+            </footer>
+        </article>
+    </section>
 
 </body>
 

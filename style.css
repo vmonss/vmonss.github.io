@@ -2,8 +2,12 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-nav, img {
+nav, img, video {
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 30px;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 #intro {
@@ -22,6 +26,14 @@ figcaption {
     text-align: center;
 }
 
+section > a {
+    color: unset;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
 main {
     /* background-color: white; */
     background-color: #F8F8F8;
@@ -32,6 +44,30 @@ main {
     background-color: white;
 }
 
-.bi-rocket-takeoff {
-    color: #E08D2B;
+@media screen and (min-width : 768px) {
+    .projet-texte-div {
+        width: 500px;
+    }
+}
+
+summary, details {
+    border: 1px solid #F0F0F0;
+}
+
+summary {
+    list-style: none;
+    text-decoration: underline;
+}
+
+details:open > summary {
+  background-color: #F0F0F0;
+}
+
+details:open {
+    background-color: #F8F8F8;
+}
+
+#contact {
+    color: white;
+    background-color: #444;
 }
