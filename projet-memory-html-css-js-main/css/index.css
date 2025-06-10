@@ -1,0 +1,63 @@
+a[href="index.html"]{
+    background-color: var(--back-color);
+    border: solid 1px white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 1em 1em 0 1em;
+    padding: 0 1em;
+    width: auto;
+    background-color: var(--back-color);
+    border: solid 1px white;
+    border-radius: 15px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 750px) {
+    
+    nav a {
+        padding : 1em;
+    }
+
+    section {
+        margin: 1em;
+        width : 70%;
+        padding: 1em 2em;
+    }
+
+    main section div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+
+    img {
+        margin: 1em 0;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    section {
+        width : 55%;
+    }
+
+    img {
+        width: 60%;
+    }
+}

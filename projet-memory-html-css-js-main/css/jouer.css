@@ -1,0 +1,109 @@
+a[href="jouer.html"]{
+    background-color: var(--back-color);
+    border: solid 1px white;
+}
+
+main {
+    min-height: 80vh;
+    width: auto;
+
+    background-color: var(--back-color);
+    border: solid 1px white;
+    border-radius: 15px;
+    margin: 1em auto;
+    padding: 0 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    column-gap: 0.6em;
+    row-gap: 0.6em;
+    perspective: 1000px;
+    /* TODO Transparent background */
+}
+
+.card-environnement {
+    display: inline-block;
+    perspective: 600px;
+}
+
+.game img {
+    position: absolute;
+    display: block;
+    border: solid 1px white;
+    padding: 4px;
+    height: 80px;
+    backface-visibility: hidden;
+}
+
+.card-reveal-side {
+    transform: rotateY(180deg);
+}
+
+.card-container {
+    position: relative;
+    height: 88px;
+    width: 88px;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.6s;
+}
+
+.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    cursor: auto;
+
+}
+
+.relaunchGameText {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 750px) {
+    nav a {
+        padding : 1em;
+    }
+
+    main {
+        width : 70%;
+        padding: 1em 2em;
+    }
+
+    .game {
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    .game img {
+        height: 100px;
+    }
+
+    .card-container {
+        height: 108px;
+        width: 108px;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    main {
+        width : 55%;
+    }
+
+    .game img {
+        height: 120px;
+    }
+
+    .card-container {
+        height: 128px;
+        width: 128px;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgb(202, 255, 109),
+    rgb(120, 105, 250)
+  );
+  font-family: sans-serif;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  --back-color: #202020;
+  --back-nav-color: #404040;
+}
+
+h1 {
+  text-shadow: 1px 1px 1px black;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 strong {
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: var(--back-nav-color);
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  border: solid 1px #cccccc;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.6em;
+}
+
+a:visited {
+  text-decoration: none;
+  color: unset;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Description précise mais concise de la page"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/inscription.css" />
+
+    <script src="js/inscription.js"></script>
+
+    <title>S'incrire - MEMORY - ENI</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>ENI - <strong>Memory</strong> - S'inscrire</h1>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="">Se connecter</a>
+        <a href="">Profil</a>
+        <a href="jouer.html">Jouer</a>
+      </nav>
+    </header>
+
+    <main>
+      <fieldset>
+        <form action="" method="post">
+          <h2>Inscrivez-vous.</h2>
+
+          <div>
+            <label for="userName">Nom d'utilisateur·ice</label>
+            <input
+              type="text"
+              id="userName"
+              autocomplete="name"
+              pattern="[a-zA-Z0-9_-]{3,}"
+              placeholder="3 caractères minimum (lettres,  - et _)"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="userEmail">Entrez votre email</label>
+            <input
+              type="email"
+              id="userEmail"
+              placeholder="Votre email"
+              pattern="[a-zA-Z0-9_.-]{3,}@[a-zA-Z]{3,}.[a-zA-Z]{2,}"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="userPass">Mot de passe</label>
+            <input
+              type="password"
+              id="userPass"
+              placeholder="Votre mot de passe"
+              pattern="[a-z]{1,}[A-Z]{1,}"
+              required
+            />
+            <p>
+              Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.
+            </p>
+            <div class="password-strength">
+              <p>Faible</p>
+              <p>Moyen</p>
+              <p>Fort</p>
+            </div>
+          </div>
+
+          <div>
+            <label for="userPassConfirm">Confirmez le mot de passe</label>
+            <input
+              type="password"
+              id="userPassConfirm"
+              placeholder="Confirmez le mot de passe"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              required
+            />
+          </div>
+
+          <div class="buttons">
+            <div>
+              <label for="createAccount"></label>
+              <button type="submit" id="createAccount">
+                Création du compte
+              </button>
+            </div>
+            <div>
+              <label for="cancelCreation"></label>
+              <button type="reset" id="cancelCreation">Annuler</button>
+            </div>
+          </div>
+        </form>
+      </fieldset>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

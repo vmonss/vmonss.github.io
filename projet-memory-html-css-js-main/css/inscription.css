@@ -1,0 +1,118 @@
+a[href="inscription.html"] {
+  background-color: var(--back-color);
+  border: solid 1px white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+fieldset {
+  margin: 1em;
+  padding: 0 2em;
+  width: auto;
+  background-color: var(--back-color);
+  border: solid 1px white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2em;
+  font-size: large;
+}
+
+input {
+  color: white;
+  margin: 1em 0;
+  padding-bottom: 3px;
+  background-color: var(--back-color);
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+fieldset div p {
+  margin: 0;
+  font-size: small;
+  color: #bbbbbbbb;
+}
+
+.password-strength {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.password-strength p {
+  width: 7em;
+  margin: 0 0.5em;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.password-strength p:nth-child(1) {
+  color: orangered;
+  border-top: solid 2px orangered;
+  visibility: hidden;
+}
+
+.password-strength p:nth-child(2) {
+  color: yellow;
+  border-top: solid 2px yellow;
+  visibility: hidden;
+}
+
+.password-strength p:nth-child(3) {
+  color: green;
+  border-top: solid 2px green;
+  visibility: hidden;
+}
+
+.buttons {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons div {
+  width: fit-content;
+}
+
+button {
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  margin: 0 0.5em;
+}
+
+@media screen and (min-width: 750px) {
+  nav a {
+    padding: 1em;
+  }
+
+  fieldset {
+    margin: 3em 1em;
+    width: 55%;
+    max-width: 500px;
+    padding: 1em 2em;
+  }
+
+  button {
+    padding: 0.7em 2em;
+  }
+}

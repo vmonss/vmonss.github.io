@@ -7,7 +7,7 @@ nav, img, video {
 }
 
 section {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 220px;
 }
 
 #intro {
@@ -26,7 +26,7 @@ figcaption {
     text-align: center;
 }
 
-section > a {
+.ancre {
     color: unset;
 }
 
@@ -44,11 +44,6 @@ main {
     background-color: white;
 }
 
-@media screen and (min-width : 768px) {
-    .projet-texte-div {
-        width: 500px;
-    }
-}
 
 summary, details {
     border: 1px solid #F0F0F0;
@@ -60,7 +55,7 @@ summary {
 }
 
 details:open > summary {
-  background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 details:open {
@@ -69,5 +64,19 @@ details:open {
 
 #contact {
     color: white;
-    background-color: #444;
+    background-color: #666;
+}
+
+footer a {
+    color: #e5e5e5;
+}
+
+@media screen and (min-width : 768px) {
+    .projet-texte-div {
+        width: 500px;
+    }
+
+    section {
+        scroll-margin-top: 70px;
+    }
 }
