@@ -2,12 +2,7 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-header {
-    position: sticky;
-    top: 0px;
-}
-
-header, img {
+nav, img {
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 30px;
 }
 
@@ -28,11 +23,13 @@ figcaption {
 }
 
 main {
-    background-color: white;
+    /* background-color: white; */
+    background-color: #F8F8F8;
 }
 
 #contenu-main {
-    background-color: floralwhite;
+    /* background-color: floralwhite; */
+    background-color: white;
 }
 
 .bi-rocket-takeoff {
