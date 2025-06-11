@@ -58,7 +58,9 @@ summary, details {
 
 summary {
     list-style: none;
+    text-align: center;
     text-decoration: underline;
+    font-style: italic;
 }
 
 details:open > summary {
