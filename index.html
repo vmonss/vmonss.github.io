@@ -74,7 +74,7 @@
     <main>
         <section id="contenu-main" class="container py-1">
             <section id="presentation">
-                <a href="#presentation" class="ancre"><h3 class="ms-3 mt-5 mb-4 fs-2">Présentation</h3></a>
+                <a href="#presentation" class="ancre"><h3 class=" d-inline-block ms-3 mt-5 mb-4 fs-2">Présentation</h3></a>
 
                 <p>Après des études de biotechnologies et une dizaine d'années à faire des prélèvements principalement
                     en environnement industriel, je me reconverti dans le secteur du développement informatique, car
@@ -109,7 +109,7 @@
                         habitudes. J'espère pourvoir faire le tour du Beaufortain l'année prochaine. 😊</p>
 
                     <figure>
-                        <img class="d-block mx-auto img-fluid rounded" src="assets/Lac du grand Laus2.jpg" loading="lazy"
+                        <img class="d-block mx-auto img-fluid rounded" src="assets/lac-du-grand-laus.jpg" loading="lazy"
                             alt="Photo prise depuis le col du Malrif, situé sur la route du GR58 nommé 'Le Tour du Queyras' (dans les Alpes). La photo est prise en plongée, il y a le lac du grand Laus en contrebas." />
                         <figcaption>Photo du Lac du grand Laus, prise depuis le col du Malrif, le soleil était un peu
                             timide ce jour là</figcaption>
@@ -118,7 +118,7 @@
             </section>
 
             <section id="projets">
-                <a href="#projets" class="ancre"><h3 class="ms-3 mt-5 mb-4 fs-2">Mes projets</h3></a>
+                <a href="#projets" class="ancre"><h3 class="d-inline-block ms-3 mt-5 mb-4 fs-2">Mes projets</h3></a>
                 <p>Voici les différents projets sur lesquels j'ai travaillé par ordre antéchronologique :</p>
 
                 <article>
@@ -126,7 +126,7 @@
                     <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
                         <div class="projet-img-div">
                             <a target="_blank" href="https://gitlab.com/vmonss/quiz">
-                                <img class="img-fluid rounded" src="assets/API quiz.webp" loading="lazy"
+                                <img class="d-block mx-auto img-fluid rounded" src="assets/api-quiz.webp" loading="lazy"
                                     alt="Lien vers le dépôt Gitlab de mon API Quiz">
                             </a>
                         </div>
@@ -156,14 +156,14 @@
                             <summary class="p-2">
                                 <p>Vous pouvez aussi cliquer ici pour consulter les démos vidéos que j'ai enregistrées :</p>
                             </summary>
-                            <video id="demo-enregistrement" class="d-block mx-auto mt-4" controls preload="none">
-                                <source src="assets/Démo enregistrement sur smartphone.m4v" type="video/mp4" />
+                            <video id="demo-enregistrement" class="d-block mx-auto mt-4" controls preload="metadata">
+                                <source src="assets/demo-enregistrement-sur-smartphone.m4v" type="video/mp4" />
                             </video>
-                            <p class="text-center mt-2 mb-4">Démonstration d'un enregistrement</p>
-                            <video id="demo-consultation" class="d-block mt-4 w-100" controls preload="none">
-                                <source src="assets/Démo consultation enregistrement sur desktop.m4v" type="video/mp4" />
+                            <p class="text-center mt-2 mb-4">Démonstration d'un enregistrement sur un smartphone</p>
+                            <video id="demo-consultation" class="d-block mt-4 w-100" controls preload="metadata">
+                                <source src="assets/demo-consultation-sur-desktop.m4v" type="video/mp4" />
                             </video>
-                            <p class="text-center mt-2 mb-3">Démonstration d'une consultation</p>
+                            <p class="text-center mt-2 mb-3">Démonstration d'une consultation sur un ordinateur de bureau</p>
                         </details>
                 </article>
 
@@ -172,42 +172,52 @@
                     <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
                         <div class="projet-img-div">
                             <a target="_blank" href="https://gitlab.com/vmonss/sorties-eni">
-                                <img class="img-fluid rounded" src="assets/sorties-eni.jpg" loading="lazy"
+                                <img class="d-block mx-auto img-fluid rounded" src="assets/sorties-eni.webp" loading="lazy"
                                     alt="Lien vers le dépôt Gitlab du projet 'Sorties ENI'">
                             </a>
                         </div>
                         <div class="projet-texte-div">
-                            <p></p>
+                            <p>Une application de gestion assez classique du type "On va sortir !", elle permet (entre autres) de proposer une
+                                sortie, de consulter les sorties en filtrant selon plusieurs critères et de s'inscrire à une sortie.</p>
+                            <p>C'est un projet que nous avons fait à trois, en une semaine et demie en fin de formation. Le projet utilise Symfony,
+                                son moteur de templating Twig et son ORM Doctrine.</p>
                         </div>
                     </div>
                 </article>
 
                 <article>
-                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de vente d'objet d'occasion aux enchères (projet de groupe ENI) en SpringBoot (Java)</h4>
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de vente d'objets d'occasion aux enchères (projet de groupe ENI) en Spring Boot (Java)</h4>
                     <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
                         <div class="projet-img-div">
                             <a target="_blank" href="https://gitlab.com/vmonss/encheres-eni">
-                                <img class="img-fluid rounded" src="assets/encheres-eni.jpg" loading="lazy"
+                                <img class="d-block mx-auto img-fluid rounded" src="assets/encheres-eni.webp" loading="lazy"
                                     alt="Lien vers le dépôt Gitlab du projet 'Enchères ENI'">
                             </a>
                         </div>
                         <div class="projet-texte-div">
-                            <p></p>
+                            <p>Une application de gestion du type "eBay", elle permet de mettre en vente un article et de consulter les articles
+                                proposés en filtrant selon plusieurs critères.</p>
+                            <p>Nous n'avons pas pu terminer le volet "faire des enchères" et "remporter une enchère" dans le temps qui nous a
+                                été imparti.</p>
+                            <p>C'est un projet de groupe de mi-formation, après l'apprentissage de la POO. Ce projet à été fait en Spring Boot,
+                                avec son moteur de templating Thymeleaf et sans ORM. Nous étions quatre et nous avions deux semaines pour mener
+                                à bien ce projet.</p>
                         </div>
                     </div>
                 </article>
 
                 <article class="pb-5">
-                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de jeu de memory (projet personnel ENI) en HTML/CSS/JS</h4>
+                    <h4 class="ms-4 mt-5 mb-4 fs-3">Application de jeu de memory (projet personnel ENI) en HTML / CSS / JS</h4>
                     <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center gap-3">
                         <div class="projet-img-div">
                             <a target="_blank" href="projet-memory-html-css-js-main/jouer.html">
-                                <img class="img-fluid rounded" src="assets/memory-eni.jpg" loading="lazy"
+                                <img class="d-block mx-auto img-fluid rounded" src="projet-memory-html-css-js-main/ressources/memory-legume/memory_detail.png" loading="lazy"
                                     alt="Lien vers le jeu 'Memory ENI'">
                             </a>
                         </div>
                         <div class="projet-texte-div">
-                            <p>Un jeu de memory, vous pouvez l'essayer en cliquant sur l'image</p>
+                            <p>Un jeu de memory, fait en une semaine en début de formation. J'ai choisi de traiter en priorité le jeu et de le rendre robuste. J'ai ensuite commencé le formulaire d'inscription et sa validation côté front mais j'ai manqué de temps pour faire le traitement des données de ce formulaire (créer une session en LocalStorage).</p>
+                            <p>Vous pouvez l'essayer en cliquant sur l'image.</p>
                         </div>
                     </div>
                 </article>
@@ -218,11 +228,11 @@
 
     <section id="contact" class="pb-5">
         <article class="container">
-            <a href="#contact" class="ancre"><h3 class="ps-3 py-4 fs-2">Me contacter</h3></a>
+            <a href="#contact" class="ancre"><h3 class="d-inline-block ps-3 py-4 fs-2">Me contacter</h3></a>
             <p>Intéressé⋅e par ce que vous avez vu ? Je serai heureux d'échanger avec vous !<br>
                 Voici quelques moyens pour me contacter :</p>
             
-            <footer class="d-flex flex-column flex-md-row justify-content-md-around mt-4">
+            <footer class="d-flex flex-column flex-md-row justify-content-md-around mt-4 text-center">
                 <p>Mon mail : <a href="mailto:vincent.monssieur@hotmail.fr">vincent.monssieur@hotmail.fr</a></p>
                 <p>Mon Linkedin : <a href="https://linkedin.com/in/vincent-monssieur/">/in/vincent-monssieur/</a></p>
                 <p>Mes dépôts Gitlab : <a href="https://gitlab.com/users/vmonss/projects">vmonss</a> <i class="bi bi-box-arrow-up-right"></i></p>

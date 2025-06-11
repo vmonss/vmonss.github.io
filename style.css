@@ -11,7 +11,7 @@ section {
 }
 
 #intro {
-    background-color: #e5f9e9;
+    background-color: #d9fcbf;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #6F2BE0;
+    color: #5654BF;
 }
 
 figcaption {
@@ -36,7 +36,7 @@ h3 {
 
 main {
     /* background-color: white; */
-    background-color: #F8F8F8;
+    background-color: #F3F3F3;
 }
 
 #contenu-main {
@@ -44,6 +44,13 @@ main {
     background-color: white;
 }
 
+.projet-img-div {
+    width: 100%;
+}
+
+.projet-texte-div {
+    text-align: justify;
+}
 
 summary, details {
     border: 1px solid #F0F0F0;
@@ -72,11 +79,17 @@ footer a {
 }
 
 @media screen and (min-width : 768px) {
+    .projet-img-div {
+        max-width: 580px;
+        min-width: 400px;
+        width: 50%;
+    }
+
     .projet-texte-div {
         width: 500px;
     }
 
     section {
-        scroll-margin-top: 70px;
+        scroll-margin-top: 30px;
     }
 }
